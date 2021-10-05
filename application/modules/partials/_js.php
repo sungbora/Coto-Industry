@@ -15,5 +15,8 @@
 <script src="<?php echo base_url('admin/js/todolist.js'); ?>"></script>
 <!-- endinject -->
 <!-- Custom js for this page-->
+<script src="<?php echo base_url('admin/jsmain/main.js'); ?>"></script>
 <script src="<?php echo base_url('admin/js/dashboard.js'); ?>"></script>
 <script src="<?php echo base_url('admin/js/Chart.roundedBarCharts.js'); ?>"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>

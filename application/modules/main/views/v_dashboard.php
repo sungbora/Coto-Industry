@@ -2,1449 +2,681 @@
 <html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="author" content="w3ctheme">
-  <meta name="description" content="Joytun Health Supplement HTMl5 Template">
-  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- title here -->
-  <title>Joytun - Home</title>
-  <!-- Favicon and Touch Icons -->
-  <link rel="shortcut icon" href="<?php echo base_url('main/images/fav.png'); ?>">
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="apple-touch-icon" href="<?php echo base_url('main/apple-touch-icon.png'); ?>">
-  <!-- Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"> -->
-  <link rel="stylesheet" href="<?php echo base_url('main/css/fontawesome.css'); ?>">
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="<?php echo base_url('main/css/bootstrap.min.css'); ?>">
-  <link rel="stylesheet" href="<?php echo base_url('main/css/animate.css'); ?>">
-  <link rel="stylesheet" href="<?php echo base_url('main/css/owl.carousel.min.css'); ?>">
-  <link rel="stylesheet" href="<?php echo base_url('main/css/owl.theme.default.min.css'); ?>">
-  <link rel="stylesheet" href="<?php echo base_url('main/css/meanmenu.min.css'); ?>">
-  <link rel="stylesheet" href="<?php echo base_url('main/css/jquery.fancybox.css'); ?>">
-  <!--Theme custom css -->
-  <link rel="stylesheet" href="<?php echo base_url('main/css/style.css'); ?>">
-  <!--Theme Responsive css-->
-  <link rel="stylesheet" href="<?php echo base_url('main/css/responsive.css'); ?>">
-  <script src="<?php echo base_url('main/js/vendor/modernizr-3.6.0.min.js'); ?>"></script>
+  <?php $this->load->view("../../partialsMain/_head.php") ?>
 </head>
 
-<body>
-  <!-- header area start here -->
-  <header class="header-area">
+<body data-bs-spy="scroll" data-bs-target="#navbarExample">
+
+  <?php $this->load->view("../../partialsMain/_nav.php") ?>
+
+  <!-- Header -->
+  <header id="header" class="header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-2">
-          <div class="logo-area">
-            <a href="index.html"><img src="<?php echo base_url('main/images/logo.png'); ?>" alt="logo"></a>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="menu-ara text-right">
-            <nav class="main-menu">
-              <ul>
-                <li class="active sub-item"><a href="index.html">Home</a>
-                  <ul class="sub-menu">
-                    <li><a href="index.html">home one</a></li>
-                    <li><a href="index2.html">home two</a></li>
-                  </ul>
-                </li>
-                <li><a href="feature.html">Features</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="price.html">Price </a></li>
-                <li class="sub-item"><a href="blog.html">Blog</a>
-                  <ul class="sub-menu">
-                    <li><a href="blog.html">Blog </a></li>
-                    <li><a href="single-blog.html">single-blog </a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="header-right">
-            <a href="#" class="banner-btn">Order Now</a>
+        <div class="col-lg-6 col-xl-5">
+					<div class="text-container">
+						<h2 class="h1-large">Kumpulkan Sampah Organikmu Kami Akan Datang Memberi Door Prize</h2>
+						<p class="p-large">Bantu Bumi kita dengan cara membersihkan lingkungan anda, berhadiah!!!</p>
+						<a class="btn-solid-lg" href="#services">Daftar</a>
+						<a class="quote" href="#contact"><i class="fas fa-paper-plane"></i>Hubungi Kami</a>
+					</div> <!-- end of text-container -->
+				</div>
+        <div class="col-lg-6 col-xl-7">
+          <div class="image-container">
+            <img class="img-fluid" src="<?php echo base_url('main/images/header-illustration.svg'); ?>" alt="alternative">
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- header area end here -->
-  <!-- banner area start here -->
-  <div class="banner-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 order-5 order-lg-0  align-self-center">
-          <div class="banner-text">
-            <h1>We Provide Powerful Medical Supplement.</h1>
-            <p>Allows you to upload your own favorite images to individual setting an image on a single page will overwrite your.</p>
-            <div class="banner-btn">
-              <a href="#" class="primary-btn">Purchase Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 align-self-center">
-          <div class="banner-right-img">
-            <img class="img-fluid" src="<?php echo base_url('main/images/banner/1.png'); ?>" alt="banner img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- banner area end here -->
-  <!-- offer area start here -->
-  <div class="offer-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="single-offer">
-            <div class="media">
-              <img src="<?php echo base_url('main/images/offer/1.jpg'); ?>" class="mr-4" alt="offer one">
-              <div class="media-body">
-                <h5 class="mt-0"><a href="#">Free Shipping</a></h5>
-                <p>Page activate navigation any throughout your the selection onesimple option the admin area doing create.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-offer">
-            <div class="media">
-              <img src="<?php echo base_url('main/images/offer/2.jpg'); ?>" class="mr-4" alt="offer one">
-              <div class="media-body">
-                <h5 class="mt-0"><a href="#">Gift Discount</a></h5>
-                <p>Page activate navigation any throughout your the selection onesimple option the admin area doing create.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-offer">
-            <div class="media">
-              <img src="<?php echo base_url('main/images/offer/3.jpg'); ?>" class="mr-4" alt="offer one">
-              <div class="media-body">
-                <h5 class="mt-0"><a href="#">Money Back</a></h5>
-                <p>Page activate navigation any throughout your the selection onesimple option the admin area doing create.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- offer area end here -->
-  <!-- featurs area start here -->
-  <div class="featurs-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5  col-md-12">
-          <div class="feature-left">
-            <div class="shape-img">
-              <img class="img-fluid" src="<?php echo base_url('main/images/feature/shape.png'); ?>" alt="shape">
-            </div>
-            <div class="single-feature">
-              <div class="feature-title">
-                <h3>Increased Energy</h3>
-              </div>
-              <div class="feature-contetn">
-                <p>Structure for your site is already built. Keep in mind
-                  that even if you don use the demo content be much
-                  better than with most themes since.</p>
-              </div>
-            </div>
-            <div class="single-feature">
-              <div class="feature-title">
-                <h3>Bone Builder</h3>
-              </div>
-              <div class="feature-contetn">
-                <p>Making it super easy to configure your site as compared most
-                  the typical admin panels. You will be pleasantly surprised how
-                  easy it is to setup </p>
-              </div>
-            </div>
-            <div class="single-feature">
-              <div class="feature-title">
-                <h3>Stress Realize</h3>
-              </div>
-              <div class="feature-contetn">
-                <p>Structure for your site is already built. Keep in mind
-                  that even if you don use the demo content be much
-                  better than with most themes since.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 offset-lg-1 col-md-12 align-self-center">
-          <div class="feature-right text-right">
-            <img class="img-fluid" src="<?php echo base_url('main/images/feature/1.png'); ?>" alt="feature">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- featurs area end here -->
-  <!-- recent product area start here -->
-  <div class="recent-product-area">
+
+
+  <!-- Services -->
+  <div id="services" class="cards-1">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-title text-center">
-            <h2>Recent Products</h2>
-            <p>Better off than with most other themes since all of the customization <br /> are done right from within the making super.</p>
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-icon blue">
+              <span class="far fa-file-alt"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Landing page</h5>
+              <p>Lorem ipsum dolor sit amet, consect adipiscing elit nulla id nisl blah nor</p>
+              <ul class="list-unstyled li-space-lg">
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Ut tincidunt vitae enim non vehi</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Phasellus vitae metus in felis</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Fusce pulvinar eu mi ac molestie</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Curabitur consequat nisl eget</div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-icon yellow">
+              <span class="fas fa-solar-panel"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Corporate site</h5>
+              <p>Nam eu erat tellused vivamus vitae sem in tortor pharetra vehicula orn</p>
+              <ul class="list-unstyled li-space-lg">
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Vivaus dignissim sit amet nisi</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Aliqam a tristique nibh in pretium</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Nunc commodo magna quis blah</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Lacus fermentum tincidunt</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-icon red">
+              <span class="fas fa-gift"></span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Online shop</h5>
+              <p>Nullam lobortis porta diam, vitae dictum metus placerat luctus bora</p>
+              <ul class="list-unstyled li-space-lg">
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Sed laoreet blandit mollis ne</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Mauris non luctus est quisquerm</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Mattis dapibus quisque tristique</div>
+                </li>
+                <li class="d-flex">
+                  <i class="fas fa-check"></i>
+                  <div class="flex-grow-1">Cursus lacus interdum sollicdn</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of card -->
+
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of cards-1 -->
+  <!-- end of services -->
+
+
+  <!-- Details 1 -->
+  <div id="details" class="basic-1">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="tab-menu">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="vitamins-tab" data-toggle="tab" href="#vitamins" role="tab" aria-controls="vitamins" aria-selected="true">Vitamins</a>
+        <div class="col-lg-6 col-xl-7">
+          <div class="image-container">
+            <img class="img-fluid" src="<?php echo base_url('main/images/details-1.svg'); ?>" alt="alternative">
+          </div> <!-- end of image-container -->
+        </div> <!-- end of col -->
+        <div class="col-lg-6 col-xl-5">
+          <div class="text-container">
+            <h2><span>Perfect solution</span><br> for your small business</h2>
+            <p>Maecenas fringilla quam posuere, pellentesque est nec, gravida turpis. Integer vitae mollis felis.
+              Integer id quam id tellus hendrerit laciniad binfer</p>
+            <p>Sed id dui rutrum, dictum urna eu, accumsan turpis. Fusce id auctor velit, sed viverra dui rem dina</p>
+            <a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modal</a>
+          </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of basic-1 -->
+  <!-- end of details 1 -->
+
+
+  <!-- Details Modal -->
+  <div id="staticBackdrop" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="row">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="col-lg-8">
+            <div class="image-container">
+              <img class="img-fluid" src="<?php echo base_url('main/images/details-modal.svg'); ?>" alt="alternative">
+            </div> <!-- end of image-container -->
+          </div> <!-- end of col -->
+          <div class="col-lg-4">
+            <h3>Goals Setting</h3>
+            <hr>
+            <p>In gravida at nunc sodales pretium. Vivamus semper, odio vitae mattis auctor, elit elit semper magna ac
+              tum nico vela spider</p>
+            <h4>User Feedback</h4>
+            <p>Sapien vitae eros. Praesent ut erat a tellus posuere nisi more thico cursus pharetra finibus posuere
+              nisi. Vivamus feugiat</p>
+            <ul class="list-unstyled li-space-lg">
+              <li class="d-flex">
+                <i class="fas fa-chevron-right"></i>
+                <div class="flex-grow-1">Tincidunt sem vel brita bet mala</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" id="protein-tab" data-toggle="tab" href="#protein" role="tab" aria-controls="protein" aria-selected="false">Protein</a>
+              <li class="d-flex">
+                <i class="fas fa-chevron-right"></i>
+                <div class="flex-grow-1">Sapien condimentum sacoz sil necr</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" id="nutrition-tab" data-toggle="tab" href="#nutrition" role="tab" aria-controls="nutrition" aria-selected="false">Nutrition</a>
+              <li class="d-flex">
+                <i class="fas fa-chevron-right"></i>
+                <div class="flex-grow-1">Fusce interdum nec ravon fro urna</div>
+              </li>
+              <li class="d-flex">
+                <i class="fas fa-chevron-right"></i>
+                <div class="flex-grow-1">Integer pulvinar biolot bat tortor</div>
+              </li>
+              <li class="d-flex">
+                <i class="fas fa-chevron-right"></i>
+                <div class="flex-grow-1">Id ultricies fringilla fangor raq trinit</div>
               </li>
             </ul>
-          </div>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="vitamins" role="tabpanel" aria-labelledby="vitamins-tab">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="slide-product owl-carousel">
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/2.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/3.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/4.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/2.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/3.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/4.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="protein" role="tabpanel" aria-labelledby="protein-tab">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="slide-product owl-carousel">
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="nutrition" role="tabpanel" aria-labelledby="nutrition-tab">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="slide-product owl-carousel">
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>60% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$890</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Sparkling Antioxidant</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>40% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$600</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Nutritional Shake</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>30% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$990</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Women’s Protein</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="single-product ">
-                      <div class="single-product-inner">
-                        <div class="product-top fix">
-                          <div class="offer float-left">
-                            <span>80% Off</span>
-                          </div>
-                          <div class="price float-right">
-                            <span>$800</span>
-                          </div>
-                        </div>
-                        <div class="product-img text-center">
-                          <a href="#"><img class="img-fluid" src="<?php echo base_url('main/images/product/1.jpg'); ?>" alt="product"></a>
-                        </div>
-                        <div class="product-title">
-                          <h4><a href="#">Mens Vitamin</a></h4>
-                        </div>
-                        <div class="product-contetn">
-                          <p>Most other themes since all the from making super.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- recent product area end here -->
-  <!-- testimonial area start here -->
-  <div class="testimonial-area">
+            <a id="modalCtaBtn" class="btn-solid-reg" href="#">Details</a>
+            <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
+          </div> <!-- end of col -->
+        </div> <!-- end of row -->
+      </div> <!-- end of modal-content -->
+    </div> <!-- end of modal-dialog -->
+  </div> <!-- end of modal -->
+  <!-- end of details modal -->
+
+
+  <!-- Details 2 -->
+  <div class="counter">
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 offset-lg-2">
-          <div class="slide-testimonial owl-carousel">
-            <div class="single-testimonial">
-              <div class="row">
-                <div class="col-lg-4 align-self-center">
-                  <div class="testimonial-img">
-                    <img src="<?php echo base_url('main/images/testimonial/clint.png'); ?>" class="img-fluid" alt="testimonial">
-                  </div>
-                </div>
-                <div class="col-lg-8 ">
-                  <div class="testimonial-content">
-                    <img src="<?php echo base_url('main/images/testimonial/quote-left.png'); ?>" alt="quote">
-                    <h2>Some feedback form <br /> our customers</h2>
-                    <div class="clint-say">
-                      <p>Users to manage their site with ease however the problem
-                        this is that you never know what might be lurking beneath
-                        the surface your beautful new theme poorly written code
-                        is a serious issue that can lead to huge problems with your
-                        the long run use improper or deprecated code can break
-                        layouts corrupt data or worse</p>
-                    </div>
-                    <div class="member-info">
-                      <h4><a href="#">Abram Bistroen</a></h4>
-                      <span>Company Manager</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="single-testimonial">
-              <div class="row">
-                <div class="col-lg-4 align-self-center">
-                  <div class="testimonial-img">
-                    <img src="<?php echo base_url('main/images/testimonial/clint.png'); ?>" class="img-fluid" alt="testimonial">
-                  </div>
-                </div>
-                <div class="col-lg-8 ">
-                  <div class="testimonial-content">
-                    <img src="<?php echo base_url('main/images/testimonial/quote-left.png'); ?>" alt="quote">
-                    <h2>Some feedback form <br /> our customers</h2>
-                    <div class="clint-say">
-                      <p>Users to manage their site with ease however the problem
-                        this is that you never know what might be lurking beneath
-                        the surface your beautful new theme poorly written code
-                        is a serious issue that can lead to huge problems with your
-                        the long run use improper or deprecated code can break
-                        layouts corrupt data or worse</p>
-                    </div>
-                    <div class="member-info">
-                      <h4><a href="#">Abram Bistroen</a></h4>
-                      <span>Company Manager</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="single-testimonial">
-              <div class="row">
-                <div class="col-lg-4 align-self-center">
-                  <div class="testimonial-img">
-                    <img src="<?php echo base_url('main/images/testimonial/clint.png'); ?>" class="img-fluid" alt="testimonial">
-                  </div>
-                </div>
-                <div class="col-lg-8 ">
-                  <div class="testimonial-content">
-                    <img src="<?php echo base_url('main/images/testimonial/quote-left.png'); ?>" alt="quote">
-                    <h2>Some feedback form <br /> our customers</h2>
-                    <div class="clint-say">
-                      <p>Users to manage their site with ease however the problem
-                        this is that you never know what might be lurking beneath
-                        the surface your beautful new theme poorly written code
-                        is a serious issue that can lead to huge problems with your
-                        the long run use improper or deprecated code can break
-                        layouts corrupt data or worse</p>
-                    </div>
-                    <div class="member-info">
-                      <h4><a href="#">Abram Bistroen</a></h4>
-                      <span>Company Manager</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="video-popup-area">
-        <div class="video-popup-inner">
-          <img src="<?php echo base_url('main/images/testimonial/testimonial-left.jpg'); ?>" alt="testimonial">
-          <a class="video-button" data-fancybox="video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="fas fa-play"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- testimonial area end here -->
-  <!-- price area start here -->
-  <div class="price-area">
+        <div class="col-lg-6 col-xl-5">
+          <div class="text-container">
+            <h2><span>Awesome websites</span><br> built with tons of love</h2>
+            <p>In gravida vitae nulla vitae tincidunt imperdiet ante. Pellentesque aliquet mi eu tortor dictum, non
+              imperdiet ante viverra. Phasellus eget enim orci flig rine bilo</p>
+
+            <!-- Counter -->
+            <div class="counter-container">
+              <div class="counter-cell">
+                <div data-purecounter-start="0" data-purecounter-end="1250" data-purecounter-duration="2" class="purecounter">1</div>
+                <div class="counter-info">Happy Customers</div>
+              </div> <!-- end of counter-cell -->
+              <div class="counter-cell red">
+                <div data-purecounter-start="0" data-purecounter-end="1380" data-purecounter-duration="2" class="purecounter">1</div>
+                <div class="counter-info">Issues Solved</div>
+              </div> <!-- end of counter-cell -->
+            </div> <!-- end of counter-container -->
+            <!-- end of counter -->
+
+          </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+        <div class="col-lg-6 col-xl-7">
+          <div class="image-container">
+
+            <img class="img-fluid" src="<?php echo base_url('main/images/details-2.svg'); ?>" alt="alternative">
+          </div> <!-- end of image-container -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of counter -->
+  <!-- end of details 2 -->
+
+
+  <!-- Projects -->
+  <div id="projects" class="filter bg-gray">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-title text-center">
-            <h2>Price & Planning</h2>
-            <p>Better off than with most other themes since all of the customization <br /> are done right from within the making super.</p>
-          </div>
-        </div>
-      </div>
+          <h2 class="h2-heading">Projects that we're proud of</h2>
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
       <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="single-price">
-            <div class="price-header">
-              <div class="price">
-                <h2>$580</h2>
-              </div>
-              <div class="title">
-                <h2>Golden</h2>
-                <span>Monthly</span>
-              </div>
+        <div class="col-lg-12">
+
+          <!-- Filter -->
+          <div class="button-group filters-button-group">
+            <button class="button is-checked" data-filter="*">ALL</button>
+            <button class="button" data-filter=".design">DESIGN</button>
+            <button class="button" data-filter=".development">DEVELOPMENT</button>
+            <button class="button" data-filter=".marketing">MARKETING</button>
+          </div> <!-- end of button group -->
+          <div class="grid">
+            <div class="element-item development">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-1.jpg'); ?>" alt="alternative">
+                <p><strong>Online banking</strong> - pellentesque tincidunt leo eu laoreedt integer quis vanos compren
+                </p>
+              </a>
             </div>
-            <div class="price-body">
-              <ul>
-                <li>Unique & Clean Design</li>
-                <li>Fresh Hand Coding</li>
-                <li>Fully Mobile Responsive</li>
-                <li>Money Back Guarantee</li>
-                <li>24/7 Support</li>
-              </ul>
-              <div class="price-btn">
-                <a href="#"><i class="fas fa-plus"></i></a>
-              </div>
+            <div class="element-item development">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-2.jpg'); ?>" alt="alternative">
+                <p><strong>Loans company</strong> - odio semper, interdum orci molestie, mattis lectus pellentesq aliqu
+                </p>
+              </a>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-price">
-            <div class="price-header">
-              <div class="price">
-                <h2>$760</h2>
-              </div>
-              <div class="title">
-                <h2>Business</h2>
-                <span>Monthly</span>
-              </div>
+            <div class="element-item development">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-3.jpg'); ?>" alt="alternative">
+                <p><strong>Refinance firm</strong> - arcu a neque congue finibus doneci malesuada et purus melan bris
+                </p>
+              </a>
             </div>
-            <div class="price-body">
-              <ul>
-                <li>Unique & Clean Design</li>
-                <li>Fresh Hand Coding</li>
-                <li>Fully Mobile Responsive</li>
-                <li>Money Back Guarantee</li>
-                <li>24/7 Support</li>
-              </ul>
-              <div class="price-btn">
-                <a href="#"><i class="fas fa-plus"></i></a>
-              </div>
+            <div class="element-item design development">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-4.jpg'); ?>" alt="alternative">
+                <p><strong>Financial products</strong> - id aliquam ut malesuada eros utr varius blandit aliquam tinci
+                  bist</p>
+              </a>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-price">
-            <div class="price-header">
-              <div class="price">
-                <h2>$920</h2>
-              </div>
-              <div class="title">
-                <h2>Platinum</h2>
-                <span>Monthly</span>
-              </div>
+            <div class="element-item design development">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-5.jpg'); ?>" alt="alternative">
+                <p><strong>Credit cards</strong> - magna a feugiat cras a semper tellus in rhoncus vehicula tellus rugo
+                </p>
+              </a>
             </div>
-            <div class="price-body">
-              <ul>
-                <li>Unique & Clean Design</li>
-                <li>Fresh Hand Coding</li>
-                <li>Fully Mobile Responsive</li>
-                <li>Money Back Guarantee</li>
-                <li>24/7 Support</li>
-              </ul>
-              <div class="price-btn">
-                <a href="#"><i class="fas fa-plus"></i></a>
-              </div>
+            <div class="element-item design marketing">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-6.jpg'); ?>" alt="alternative">
+                <p><strong>Software robots</strong> - vel sodales dolor donec a est sapien integer pharetr bilom conva
+                </p>
+              </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- price area end here -->
-  <!-- fun facts area start here -->
-  <div class="fun-facts-area">
+            <div class="element-item design marketing">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-7.jpg'); ?>" alt="alternative">
+                <p><strong>Company control</strong> - ut quam aliquam elemo de vestibulum fringilla porttitor vanic tres
+                </p>
+              </a>
+            </div>
+            <div class="element-item design marketing">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-8.jpg'); ?>" alt="alternative">
+                <p><strong>Audit reports</strong> - sed tempor, metus vel pharetra finibus, est ante hendrerit augue</p>
+              </a>
+            </div>
+            <div class="element-item design marketing">
+              <a href="article.html">
+                <img class="img-fluid" src="<?php echo base_url('main/images/project-9.jpg'); ?>" alt="alternative">
+                <p><strong>Big business</strong> - aliquam semper molestie nisi, at porttitor lacus suscipit in mole
+                  richter</p>
+              </a>
+            </div>
+          </div> <!-- end of grid -->
+          <!-- end of filter -->
+
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of filter -->
+  <!-- end of projects -->
+
+
+  <!-- Testimonials -->
+  <div class="slider-1">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-title text-center">
-            <h2>Awesome supplement for your <br /> body we have <span>20 years of experience</span></h2>
-            <p>Than with most other themes since all of the customization are done right from within the making super <br />murking beneath the surface of your beautiful new theme poorly written code is a serious issue that can lead <br /> problems with your site in the long run use of improper or deprecated code break </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="single-counter text-center">
-            <h2 class="counter">865</h2>
-            <span>Happy Customer</span>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="single-counter text-center">
-            <h2 class="counter">568</h2>
-            <span>Awads Winning</span>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="single-counter text-center">
-            <h2 class="counter">689</h2>
-            <span>Complete Projects</span>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="single-counter text-center">
-            <h2 class="counter">358</h2>
-            <span>Team Members</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- fun facts area end here -->
-  <!-- blog area start here -->
-  <div class="blog-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title text-center">
-            <h2>Our Recent Post</h2>
-            <p>Better off than with most other themes since all of the customization <br /> are done right from within the making super.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="single-blog">
-            <div class="card">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="assets/images/blog/1.png" class="card-img" alt="blog">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title"><a href="single-blog.html">Antioxidants maximize the training oxen effect.</a></h5>
-                    <p class="card-text"><span class="blog-date">22 March, 2019</span></p>
-                    <p class="card-text mb-0">Activate navigation page throughoue your them selection onesimple option the admin area doing.</p>
+
+          <!-- Card Slider -->
+          <div class="slider-container">
+            <div class="swiper-container card-slider">
+              <div class="swiper-wrapper">
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img class="quotes" src="<?php echo base_url('main/images/quotes.svg'); ?>" alt="alternative">
+                    <div class="card-body">
+                      <p class="testimonial-text">Fusce tincidunt dui nec diam varius venenatis. Nullam tristique rutrum
+                        odio, ut tincidunt erat dictum in. Etiam et aliquet mi, et vehicula elit fusce porta ullamcorper
+                      </p>
+                      <div class="details">
+                        <img class="testimonial-image" src="<?php echo base_url('main/images/testimonial-1.jpg'); ?>" alt="alternative">
+                        <div class="text">
+                          <div class="testimonial-author">Samantha Bloom</div>
+                          <div class="occupation">Team Leader - Syncnow</div>
+                        </div> <!-- end of text -->
+                      </div> <!-- end of testimonial-details -->
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="single-blog">
-            <div class="card">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="assets/images/blog/2.png" class="card-img" alt="blog">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title"><a href="single-blog.html">Antioxidants maximize the training oxen effect.</a></h5>
-                    <p class="card-text"><span class="blog-date">22 March, 2019</span></p>
-                    <p class="card-text mb-0">Activate navigation page throughoue your them selection onesimple option the admin area doing.</p>
+                </div> <!-- end of swiper-slide -->
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img class="quotes" src="<?php echo base_url('main/images/quotes.svg'); ?>" alt="alternative">
+                    <div class="card-body">
+                      <p class="testimonial-text">Mauris ut mattis nisl. Nunc ultrices nisi eget nisl pulvinar iaculis
+                        vitae ac nulla. Nullam fringilla varius blandit. Nam sit amet eleifend justo blogo rovan de
+                        chichis kokos venir dab</p>
+                      <div class="details">
+                        <img class="testimonial-image" src="<?php echo base_url('main/images/testimonial-2.jpg'); ?>" alt="alternative">
+                        <div class="text">
+                          <div class="testimonial-author">Mike Page</div>
+                          <div class="occupation">Developer - Chainlink</div>
+                        </div> <!-- end of text -->
+                      </div> <!-- end of testimonial-details -->
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- blog area end here -->
-  <!-- partners area start here -->
-  <div class="partners-area">
+                </div> <!-- end of swiper-slide -->
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img class="quotes" src="<?php echo base_url('main/images/quotes.svg'); ?>" alt="alternative">
+                    <div class="card-body">
+                      <p class="testimonial-text">Nam sit amet eleifend justo. Aliquam sit amet lacinia enim, eget
+                        facilisis ex. Ut pretium cursus eleifend. Integer feugiat malesuada quam vel basil venis proca
+                        jilo</p>
+                      <div class="details">
+                        <img class="testimonial-image" src="<?php echo base_url('main/images/testimonial-3.jpg'); ?>" alt="alternative">
+                        <div class="text">
+                          <div class="testimonial-author">Mary Longhorn</div>
+                          <div class="occupation">Manager - Firstdev</div>
+                        </div> <!-- end of text -->
+                      </div> <!-- end of testimonial-details -->
+                    </div>
+                  </div>
+                </div> <!-- end of swiper-slide -->
+                <!-- end of slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img class="quotes" src="<?php echo base_url('main/images/quotes.svg'); ?>" alt="alternative">
+                    <div class="card-body">
+                      <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur ing elit. Nulla id nisl tempus
+                        risus facilisis efficr ut tincidunt vitae enim non vehicula. Phases vitae metus in felis gravida
+                        ultrices zimbo</p>
+                      <div class="details">
+                        <img class="testimonial-image" src="<?php echo base_url('main/images/testimonial-4.jpg'); ?>" alt="alternative">
+                        <div class="text">
+                          <div class="testimonial-author">Ronny Drummer</div>
+                          <div class="occupation">Designer - Sawdust</div>
+                        </div> <!-- end of text -->
+                      </div> <!-- end of testimonial-details -->
+                    </div>
+                  </div>
+                </div> <!-- end of swiper-slide -->
+                <!-- end of slide -->
+
+              </div> <!-- end of swiper-wrapper -->
+
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- end of add arrows -->
+
+            </div> <!-- end of swiper-container -->
+          </div> <!-- end of slider-container -->
+          <!-- end of card slider -->
+
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of slider-1 -->
+  <!-- end of testimonials -->
+
+
+  <!-- Pricing -->
+  <div id="pricing" class="cards-2">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="slide-parners owl-carousel">
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/1.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/2.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/3.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/4.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/5.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/1.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/2.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/3.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/4.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/5.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/1.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/2.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/3.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/4.png" alt="parners"></a>
-            </div>
-            <div class="single-partner">
-              <a href="#"><img src="assets/images/parners/5.png" alt="parners"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- partners area end here -->
-  <!-- footer area start here -->
-  <footer class="footer-area">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="single-widgets">
-              <div class="widgets-title">
-                <h4>Who can help!</h4>
+          <h2 class="h2-heading"><span>Choose the package</span><br> that fits your budget and project</h2>
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+      <div class="row">
+        <div class="col-lg-12">
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <img class="decoration-lines" src="<?php echo base_url('main/images/decoration-lines.svg'); ?>" alt="alternative"><span>Landing
+                  page</span><img class="decoration-lines flipped" src="<?php echo base_url('main/images/decoration-lines.svg'); ?>" alt="alternative">
               </div>
-              <div class="widgets-text">
-                <ul>
-                  <li><a href="#">Partner Programm</a></li>
-                  <li><a href="#">Leadership Team</a></li>
-                  <li><a href="#">Price & Planning</a></li>
-                  <li><a href="#">Privacy & Condation</a></li>
-                  <li><a href="#">Extra Terms</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single-widgets">
-              <div class="widgets-title">
-                <h4>Get to know</h4>
-              </div>
-              <div class="widgets-text">
-                <ul>
-                  <li><a href="#">Testimonial</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Blog Post</a></li>
-                  <li><a href="#">Site Map</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single-widgets">
-              <div class="widgets-title">
-                <h4>Support</h4>
-              </div>
-              <div class="widgets-text">
-                <ul>
-                  <li><a href="#">Order Track</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Find My Product</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Help Desk</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single-widgets">
-              <div class="widgets-title">
-                <h4>System Policy</h4>
-              </div>
-              <div class="widgets-text">
-                <ul>
-                  <li><a href="#">Terms of Use</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Happy Return</a></li>
-                  <li><a href="#">Refund Policy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="copyright-area">
-              <p>Copyright &copy; <span>2019</span>; All Right Reserved</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="social-media text-right">
-              <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+              <ul class="list-unstyled li-space-lg">
+                <li>Fusce pulvinar eu mi acm</li>
+                <li>Curabitur consequat nisl bro</li>
+                <li>Reget facilisis molestie</li>
+                <li>Vivamus vitae sem in tortor</li>
+                <li>Pharetra vehicula ornares</li>
+                <li>Vivamus dignissim sit amet</li>
+                <li>Ut convallis aliquama set</li>
               </ul>
+              <div class="price">$200</div>
+              <a href="#contact" class="btn-outline-reg">Get quote</a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer area start here -->
-  <!-- js file start -->
-  <script src="<?php echo base_url('main/js/vendor/jquery-3.3.1.min.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/plugins.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/Popper.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/bootstrap.min.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/scrollup.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/owl.carousel.min.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/jquery.meanmenu.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/jquery.fancybox.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/jquery.counterup.min.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/waypoints.min.js'); ?>"></script>
-  <script src="<?php echo base_url('main/js/main.js'); ?>"></script>
-  <!-- End js file -->
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <img class="decoration-lines" src="<?php echo base_url('main/images/decoration-lines.svg'); ?>" alt="alternative"><span>Corporate
+                  site</span><img class="decoration-lines flipped" src="<?php echo base_url('main/images/decoration-lines.svg'); ?>" alt="alternative">
+              </div>
+              <ul class="list-unstyled li-space-lg">
+                <li>Nunc commodo magna quis</li>
+                <li>Lacus fermentum tincidunt</li>
+                <li>Nullam lobortis porta diam</li>
+                <li>Announcing of invita mro</li>
+                <li>Dictum metus placerat luctus</li>
+                <li>Sed laoreet blandit mollis</li>
+                <li>Mauris non luctus est</li>
+              </ul>
+              <div class="price">$300</div>
+              <a href="#contact" class="btn-outline-reg">Get quote</a>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                <img class="decoration-lines" src="<?php echo base_url('main/images/decoration-lines.svg'); ?>" alt="alternative"><span>Online
+                  shop</span><img class="decoration-lines flipped" src="<?php echo base_url('main/images/decoration-lines.svg'); ?>" alt="alternative">
+              </div>
+              <ul class="list-unstyled li-space-lg">
+                <li>Quisque rutrum mattis</li>
+                <li>Quisque tristique cursus lacus</li>
+                <li>Interdum sollicitudin maec</li>
+                <li>Quam posuere, pellentesque</li>
+                <li>Est nec, gravida turpis integer</li>
+                <li>Mollis felis. Integer id quam</li>
+                <li>Id tellus hendrerit lacinia</li>
+              </ul>
+              <div class="price">$400</div>
+              <a href="#contact" class="btn-outline-reg">Get quote</a>
+            </div>
+          </div>
+          <!-- end of card -->
+
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of cards-2 -->
+  <!-- end of pricing -->
+
+
+  <!-- Invitation -->
+  <div class="basic-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-container">
+            <h4>In gravida at nunc sodales pretium. Vivamus semper, odio vitae mattis auctor, elit elit semper magna
+              rico</h4>
+            <p class="p-large">Ac tristique velit sapien vitae eros. Praesent ut erat a tellus cursus pharetra finibus
+              posuere nisi. Vivamus feugiat tincidunt sem pre toro</p>
+          </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of basic-2 -->
+  <!-- end of invitation -->
+
+
+  <!-- Contact -->
+  <div id="contact" class="form-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="h2-heading"><span>Use the following form to</span><br> request a quote for your project</h2>
+          <p class="p-heading">Vel malesuada sapien condimentum nec. Fusce interdum nec urna et finibus pulvinar tortor
+            id</p>
+          <ul class="list-unstyled li-space-lg">
+            <li><i class="fas fa-map-marker-alt"></i> &nbsp;22 Praesentum, Pharetra Fin, CB 12345, KL</li>
+            <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li>
+            <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></li>
+          </ul>
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+
+          <!-- Contact Form -->
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control-input" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control-input" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <select class="form-control-select" required>
+                <option class="select-option" value="" disabled selected>Project type</option>
+                <option class="select-option" value="Company Website">Company Website</option>
+                <option class="select-option" value="Landing Page">Landing Page</option>
+                <option class="select-option" value="Online Shop">Online Shop</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control-textarea" placeholder="Message" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="form-control-submit-button">Submit</button>
+            </div>
+          </form>
+          <!-- end of contact form -->
+
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of form-1 -->
+  <!-- end of contact -->
+
+
+  <!-- Footer -->
+  <div class="footer bg-gray">
+    <img class="decoration-city" src="<?php echo base_url('main/images/decoration-city.svg'); ?>" alt="alternative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Pellentesque aliquet mi eu tortor dictum, non imperdiet ante viverra. Phasellus eget enim orci ut
+            pellentes troc</h4>
+          <div class="social-container">
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x"></i>
+              </a>
+            </span>
+          </div> <!-- end of social-container -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of footer -->
+  <!-- end of footer -->
+
+
+  <!-- Copyright -->
+  <div class="copyright bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul class="list-unstyled li-space-lg p-small">
+            <li><a href="article.html">Article Details</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div> <!-- end of col -->
+        <div class="col-lg-6">
+          <p class="p-small statement">Copyright © <a href="#">Your name</a></p>
+        </div> <!-- end of col -->
+      </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of copyright -->
+  <!-- end of copyright -->
+
+
+  <!-- Back To Top Button -->
+  <button onclick="topFunction()" id="myBtn">
+    <img src="<?php echo base_url('main/images/up-arrow.png'); ?>" alt="alternative">
+  </button>
+  <!-- end of back to top button -->
+
+  <!-- Scripts -->
+  <script src="<?php echo base_url('main/js/bootstrap.min.js'); ?>"></script> <!-- Bootstrap framework -->
+  <script src="<?php echo base_url('main/js/swiper.min.js'); ?>"></script> <!-- Swiper for image and text sliders -->
+  <script src="<?php echo base_url('main/js/purecounter.min.js'); ?>"></script> <!-- Purecounter counter for statistics numbers -->
+  <script src="<?php echo base_url('main/js/isotope.pkgd.min.js'); ?>"></script> <!-- Isotope for filter -->
+  <script src="<?php echo base_url('main/js/scripts.js'); ?>"></script> <!-- Custom scripts -->
 </body>
 
 </html>
