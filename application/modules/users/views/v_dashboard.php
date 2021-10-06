@@ -16,6 +16,20 @@
         <div class="content-wrapper">
           <?php
           if ($this->session->flashdata('successInput')) echo '<script> swal("Berhasil!", "Berhasil Menginput Sampah!!", "success") </script>';
+
+          if($profile->address == null) {
+            ?>
+              <div class="alert alert-danger text-dark" role="alert">
+                <h4 class=""><b>AKUN KAMU MASIH BELUM AKTIF, MOHON UNTUK MENGISI ALAMAT TERLEBIH DAHULU!!</b></h4>
+              </div>
+            <?php  
+          } else {
+            ?>
+              <div class="alert alert-success text-dark" role="alert">
+                <h4 class="">Jangan Lupa, 2 Hari Sekali Petugas akan ke tempatmu!</h4>
+              </div>
+            <?php  
+          }
           ?>
           <div class="alert alert-success text-dark" role="alert">
             <h4 class="">Selamat Datang, <?php echo $this->session->userdata('nama') ?></h4>
@@ -30,19 +44,19 @@
                     <h4 class="mb-4"><b>Total Sampah Semua</b></h4>
                     <p class="fs-30 mb-2"><b><?php $numberAll->total == null ? $total = 0 : $total = $numberAll->total;
                                               echo $total; ?> Kg</b></p>
-                    <p>Total Semua Sampah Sampai sekarang</p>
+                    <p>Total Semua Sampah Selama ini</p>
                   </div>
                 </div>
               </a>
             </div>
             <div class="col-md-3 mb-4 stretch-card transparent">
-              <a href="<?php echo site_url('admin/Dashboard/ListSampahOP') ?>" class="card card-dark-blue" style="text-decoration: none;">
+              <a href="<?php echo site_url('admin/Dashboard/ListSampahKamu') ?>" class="card card-dark-blue" style="text-decoration: none;">
                 <div class="card card-dark-blue">
                   <div class="card-body">
-                    <h4 class="mb-4"><b>Total Sampah Kamu (Operator) </b></h4>
-                    <p class="fs-30 mb-2"><b><?php $numberOp->total == null ? $total = 0 : $total = $numberOp->total;
-                                              echo $total; ?> Kg</b></p>
-                    <p>Total Sampah Operator</p>
+                    <h4 class="mb-4"><b>Total Sampah Kamu </b></h4>
+                    <p class="fs-30 mb-2"><b><?php $Alltotal->total == null ? $totals = 0 : $totals = $Alltotal->total;
+                                                echo $totals; ?> Kg</b></p>
+                    <p>Total Semua Sampah Kamu</p>
                   </div>
                 </div>
               </a>
@@ -70,7 +84,7 @@
                   <tbody>
                     <?php
                     $no = 1;
-                    foreach ($listSampah as $value) {
+                    foreach ($sampah as $value) {
                       $date = date_create($value->tanggal);
                     ?>
                       <tr>

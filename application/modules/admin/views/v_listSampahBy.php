@@ -16,7 +16,14 @@
         <div class="content-wrapper">
           <h2 class="text-center"></h2>
           <div class="card shadow col-lg-3">
-            <form action="<?php echo site_url('admin/Dashboard/ListSampahFilter') ?>" method="post">
+            <?php
+              if($this->session->userdata('level') == 'user') {
+                $go = 'admin/Dashboard/ListSampahFilterKamu';
+              } else {
+                $go = 'admin/Dashboard/ListSampahFilterOP';
+              }
+            ?>
+            <form action="<?php echo site_url($go) ?>" method="post">
               <div class="card-body">
                 <div class="form-group">
                   <h3 class="pb-2"><b>Tanggal</b></h3>
@@ -24,7 +31,7 @@
                   <br>
                   <input type="date" name="tglAkhirInputAdmin" class="form-control" placeholder="Tanggal Akhir">
                 </div>
-                <input type="submit" class="btn btn-success" value="cari">
+                <input type="submit" class="btn btn-success btn-sm" value="CARI">
               </div>
             </form>
           </div>
@@ -50,7 +57,7 @@
                   <tbody>
                     <?php
                     $no = 1;
-                    foreach ($getAllSampahByDate as $value) {
+                    foreach ($getAllSampah as $value) {
                       $date = date_create($value->tanggal);
                     ?>
                       <tr>
@@ -68,11 +75,6 @@
                         }
                         ?>
                         <td>
-                          <?php
-                            if ($value->status != 1 && $this->session->userdata('level') == 'admin') {
-                              ?> <a href="javascript:void(0)" onclick="modalSetujui(this)" data-id="<?php echo $value->id ?>" class="btn btn-success"><b>Setujui</b></a> <?php
-                            }
-                          ?>
                           <a href="<?php echo site_url('admin/Dashboard/GetDetailSampah/' . $value->id) ?>" class="btn btn-primary"><b>Detail</b></a>
                         </td>
                       </tr>
@@ -92,4 +94,4 @@
   <?php $this->load->view("../../partials/_js.php") ?>
 </body>
 
-</html>
+</html> 

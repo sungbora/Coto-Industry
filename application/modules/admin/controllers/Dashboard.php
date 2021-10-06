@@ -27,11 +27,24 @@ class Dashboard extends CI_Controller
     $this->Sampah_models->updateStatusSampah($id);
     redirect('admin/Dashboard/ListSampah');
   }
+
+  //User
+  public function ListSampahKamu()
+  {
+    $data['getAllSampah'] = $this->Sampah_models->getDataSampahUser();
+    $this->load->view('v_listSampahBy', $data);
+  }
+
+  public function ListSampahFilterKamu()
+  {
+    $data['getAllSampah'] = $this->Sampah_models->getSampahByDateUser();
+    $this->load->view('v_listSampahBy', $data);
+  }
   
   //Operate
   public function op()
   {
-    $data['listSampah'] = $this->Sampah_models->getDataByIDOperatorToday();
+    $data['listSampah'] = $this->Sampah_models->getDataByIDOperator();
     $data['numberAll'] = $this->Sampah_models->getTotalSampah();
     $data['numberOp'] = $this->Sampah_models->getTotalSampahOp();
     $this->load->view('operate/v_dashboard', $data);
@@ -63,6 +76,18 @@ class Dashboard extends CI_Controller
     }
 
     // $this->Sampah_models->do_upload();
+  }
+
+  public function ListSampahOP()
+  {
+    $data['getAllSampah'] = $this->Sampah_models->getDataByIDOperator();
+    $this->load->view('v_listSampahBy', $data);
+  }
+
+  public function ListSampahFilterOP()
+  {
+    $data['getAllSampah'] = $this->Sampah_models->getSampahByDateOP();
+    $this->load->view('v_listSampahBy', $data);
   }
 
   //Administration

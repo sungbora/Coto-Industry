@@ -72,6 +72,12 @@
                       <a href="<?php echo site_url('admin/Dashboard/op') ?>" class="btn btn-success"><b>Kembali</b></a>
                     <?php
                     break;
+                  
+                  case 'user':
+                    ?> 
+                      <a href="<?php echo site_url('users/User') ?>" class="btn btn-success"><b>Kembali</b></a>
+                    <?php
+                    break;
                 }
               ?>
             </div>

@@ -13,10 +13,27 @@
               <img src="<?php echo base_url('/image/pp/user.png') ?>" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item" href="<?php echo site_url('admin/Dashboard/Setting') ?>">
-                <i class="ti-settings text-primary"></i>
-                Settings
-              </a>
+              <?php
+                switch ($this->session->userdata('level')) {
+                  case 'user':
+                    ?>
+                      <a class="dropdown-item" href="<?php echo site_url('users/User/Setting/' . $this->session->userdata('idUser')) ?>">
+                        <i class="ti-settings text-primary"></i>
+                        Settings
+                      </a>
+                    <?php
+                    break;
+                  
+                    default:
+                    ?>
+                      <a class="dropdown-item" href="<?php echo site_url('admin/Dashboard/Setting') ?>">
+                        <i class="ti-settings text-primary"></i>
+                        Settings
+                      </a>
+                    <?php
+                    break;
+                }
+              ?>
               <a href="<?php echo site_url('login/Login/Logout') ?>" class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
                 Logout

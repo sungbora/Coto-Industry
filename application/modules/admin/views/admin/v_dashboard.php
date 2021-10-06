@@ -28,7 +28,7 @@
                 <div class="card-body">
                   <h4 class="mb-4"><b>Total Sampah Harian</b></h4>
                   <p class="fs-30 mb-2"><b><?php $numberAll->total == null ? $total = 0 : $total = $numberAll->total; echo $total; ?> Kg</b></p>
-                  <p>Total Semua Sampah Hari ini</p>
+                  <p>Total Semua Sampah Satt ini</p>
                 </div>
               </a>
             </div>
@@ -44,7 +44,7 @@
           </div>
           <div class="card shadow">
             <div class="card-body">
-              <h3 class=""><b>Sampah Hari ini</b></h3>
+              <h3 class=""><b>List Sampah</b></h3>
               <hr>
               <div class="table-responsive">
                 <table class="display expandable-table table-hover" id="ksajdkasdj" style="width:100%">

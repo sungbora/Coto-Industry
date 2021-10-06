@@ -27,11 +27,19 @@ class Sampah_models extends CI_Model
     ];
   }
 
-  public function getDataByIDOperatorToday()
+  public function getDataByIDOperator()
   {
     date_default_timezone_set('Asia/Jakarta');
     $date = date('Y-m-d');
-    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id and a.idUser_operator = '" . $this->session->userdata('idUser') . "' and a.tanggal='$date') ");
+    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id and a.idUser_operator = '" . $this->session->userdata('idUser') . "') ");
+    return $query->result();
+  }
+
+  public function getSampahByDateOP()
+  {
+    $tglawal = $_POST['tglAwalInputAdmin'];
+    $tglakhir = $_POST['tglAkhirInputAdmin'];
+    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id and a.tanggal BETWEEN '$tglawal' AND '$tglakhir' and  a.idUser_operator = '" . $this->session->userdata('idUser') . "')");
     return $query->result();
   }
 
@@ -39,7 +47,7 @@ class Sampah_models extends CI_Model
   {
     date_default_timezone_set('Asia/Jakarta');
     $date = date('Y-m-d');
-    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id and a.tanggal='$date' ) ");
+    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id ) ");
     return $query->result();
   }
 
@@ -49,10 +57,30 @@ class Sampah_models extends CI_Model
     return $query->result();
   }
 
+  public function getDataSampahOP()
+  {
+    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id) ");
+    return $query->result();
+  }
+
   public function getDetailsSampah($id)
   {
     $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where a.idUser_pengguna = b.id and a.idUser_operator = c.id and a.id = '" . $id . "' ");
     return $query->row();
+  }
+
+  public function getDataSampahUser()
+  {
+    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id and a.idUser_pengguna = '" . $this->session->userdata('idUser') . "') ");
+    return $query->result();
+  }
+
+  public function getSampahByDateUser()
+  {
+    $tglawal = $_POST['tglAwalInputAdmin'];
+    $tglakhir = $_POST['tglAkhirInputAdmin'];
+    $query = $this->db->query("SELECT a.*, b.name, c.name as opName FROM m_sampah a, m_user b, user_super c where (a.idUser_pengguna = b.id and a.idUser_operator = c.id and a.tanggal BETWEEN '$tglawal' AND '$tglakhir' and  a.idUser_pengguna = '" . $this->session->userdata('idUser') . "')");
+    return $query->result();
   }
 
   public function getTotalUsers()
@@ -93,7 +121,13 @@ class Sampah_models extends CI_Model
 
   public function getTotalSampahOp()
   {
-    $query = $this->db->query("SELECT SUM(total_sampah) as total FROM m_sampah where idUser_operator = '" . $this->session->userdata('idUser') . "' ");
+    $query = $this->db->query("SELECT SUM(total_sampah) as total FROM m_sampah where idUser_operator = '" . $this->session->userdata('idUser') . "' and `status` = 1 ");
+    return $query->row();
+  }
+
+  public function getTotalSampahUser()
+  {
+    $query = $this->db->query("SELECT sum(total_sampah) as total FROM `m_sampah` where idUser_pengguna = '" . $this->session->userdata('idUser') . "' and `status` = 1");
     return $query->row();
   }
 

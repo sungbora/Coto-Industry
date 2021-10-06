@@ -23,6 +23,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       return $this->db->get($this->_table)->result();
     }
 
+    public function getProfileUser()
+    {
+      $query = $this->db->query("SELECT * FROM `m_user` WHERE id='".$this->session->userdata('idUser')."' ");
+      return $query->row();
+    }
+
     public function getProfileUserSuper()
     {
       $query = $this->db->query("SELECT * FROM `user_super` WHERE id='".$this->session->userdata('idUser')."' ");
@@ -31,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     public function loginCheck($username, $password)
     {
-      $query = $this->db->query("SELECT * FROM `m_user` WHERE `username` ='$username' and `password` = '$password' and `is_active`='aktif' ");
+      $query = $this->db->query("SELECT * FROM `m_user` WHERE `username` ='$username' and `password` = '$password' ");
       $query->num_rows() == 1 ? $rt = $query->result() : $rt = false;
       return $rt;
     }
@@ -123,6 +129,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     public function getKecamatan($id)
     {
       return $this->db->query("SELECT * FROM `m_kecamatan` where `kabupaten_id`='$id' ")->result();
+    }
+
+    public function sendKode()
+    {
+      $date = date('Y-m-d');
+      $code = $this->session->flashdata('lastValidCode');
+      $email = $_POST['emailInput'];
+      $this->db->query("INSERT INTO `m_validCode`(`email`, `code`, `date`) VALUES ('$email','$code','$date')");
+    }
+
+    public function checkKode()
+    {
+      $email = $_POST['emailInputan'];
+      $query = $this->db->query("SELECT id ,code FROM `m_validCode` where email = '$email' order by id desc limit 1")->row();
+      echo $query->code;
+    }
+
+    public function checkEmail()
+    {
+      $email = $_POST['emailInputCheck'];
+      $query = $this->db->query("SELECT email FROM `m_user` where email='$email'")->row();
+      echo $query->email;
+    }
+
+    public function registeredAkun()
+    {
+      $usm = htmlspecialchars($_POST['usmRegist']);
+      $password = htmlspecialchars($_POST['passwordRegist']);
+      $nama = htmlspecialchars($_POST['namaRegist']);
+      $email = htmlspecialchars($_POST['emailInputRegist']);
+
+      $this->db->query("INSERT INTO `m_user`(`username`, `password`, `email`, `name`, `group_user`, `is_active`) VALUES ('$usm','$password','$email','$nama','user','nonaktif')");
     }
   }
 

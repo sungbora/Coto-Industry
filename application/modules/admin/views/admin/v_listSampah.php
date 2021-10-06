@@ -69,7 +69,7 @@
                         ?>
                         <td>
                           <?php
-                            if ($value->status != 1) {
+                            if ($value->status != 1 && $this->session->userdata('level') == 'admin') {
                               ?> <a href="javascript:void(0)" onclick="modalSetujui(this)" data-id="<?php echo $value->id ?>" class="btn btn-success"><b>Setujui</b></a> <?php
                             }
                           ?>
